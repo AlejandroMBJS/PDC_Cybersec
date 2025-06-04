@@ -1,0 +1,318 @@
+/*──────────────────────────────────────────────────────────────────────────
+  Variables de Color & Tipografía
+──────────────────────────────────────────────────────────────────────────*/
+:root {
+  --color-bg: #101215;
+  --color-surface: #1b1d22;
+  --color-text: #f0f0f0;
+  --color-text-secondary: #a1a1a7;
+  --color-accent: #4fa3be; /* azul cian suave */
+  --color-border: #2c2e33;
+  --color-btn-bg: #4fa3be;
+  --color-btn-text: #fff;
+  --color-btn-hover: #358096;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Reset y Global
+──────────────────────────────────────────────────────────────────────────*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Header / Hero
+──────────────────────────────────────────────────────────────────────────*/
+.site-header {
+  background: var(--color-surface);
+  padding: 60px 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.header-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.logo-main {
+  width: 150px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 12px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Main & Secciones
+──────────────────────────────────────────────────────────────────────────*/
+main {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Planes de Servicio
+──────────────────────────────────────────────────────────────────────────*/
+.plans-section {
+  margin-bottom: 60px;
+}
+
+.plan-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.plan {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.plan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-color: #3e4146;
+}
+
+.plan-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.plan-title {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin: 0 0 12px;
+}
+
+.plan-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  flex: 1;
+  margin: 0 0 14px;
+}
+
+.plan-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.plan-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  padding: 10px 28px;
+  border-radius: 100px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan-btn:hover,
+.plan-btn:focus {
+  background: var(--color-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Beneficios
+──────────────────────────────────────────────────────────────────────────*/
+.beneficios-section {
+  margin-bottom: 60px;
+}
+
+.beneficios-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.beneficios-list li {
+  font-size: 0.98rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+}
+
+.beneficios-list li::before {
+  content: '✔';
+  color: var(--color-accent);
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Contacto
+──────────────────────────────────────────────────────────────────────────*/
+.contact-section {
+  margin-bottom: 60px;
+}
+
+.contact-text {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form label {
+  font-size: 0.95rem;
+  color: var(--color-accent);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: #27292d;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.contact-btn {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background: var(--color-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.contact-alt {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--color-text-secondary);
+}
+
+.contact-alt a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.contact-alt a:hover {
+  color: #7fcbe0;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Footer
+──────────────────────────────────────────────────────────────────────────*/
+.site-footer {
+  background: var(--color-surface);
+  text-align: center;
+  padding: 24px 10px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+/*──────────────────────────────────────────────────────────────────────────
+  Responsividad
+──────────────────────────────────────────────────────────────────────────*/
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .plan-list {
+    grid-template-columns: 1fr;
+  }
+  .beneficios-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
