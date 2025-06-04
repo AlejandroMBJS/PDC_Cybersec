@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Red Blindada – PDC CyberSec</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDC CyberSec – Blindaje Interno</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <img src="logo-pdc.png" alt="Logo PDC CyberSec" class="logo-main">
-    <h1 class="hero-title">Red Blindada</h1>
-    <p class="hero-subtitle">Pruebas avanzadas contra tu red e infraestructura interna para reforzar la defensa total.</p>
+    <div class="header-inner">
+      <img src="logo-pdc.png" alt="Logo PDC CyberSec" class="logo-main" />
+      <h1 class="hero-title">Blindaje Interno</h1>
+      <p class="hero-subtitle">Pentesting de Active Directory para proteger desde adentro</p>
+    </div>
   </header>
 
   <main>
     <section class="plans-section">
-      <h2 class="section-title">¿Qué incluye?</h2>
+      <h2 class="section-title">¿Qué incluye este plan?</h2>
       <div class="plan">
-        <img src="interna.png" alt="Red Blindada Pentesting Interno" class="plan-icon">
+        <img src="blindaje.png" alt="Blindaje Interno" class="plan-icon" />
         <p class="plan-desc">
-          Este plan ofrece pruebas de intrusión avanzadas en tu red privada (LAN) e infraestructura interna. Está pensado para detectar lo que un atacante lograría una vez dentro de tu red, ya sea tras comprometer una cuenta o mediante acceso físico o remoto no autorizado.
+          Este plan está diseñado para evaluar y blindar tu entorno interno, específicamente la infraestructura de Active Directory. Simulamos ataques reales desde dentro de la red, como si un atacante ya hubiese obtenido acceso limitado y buscase escalar privilegios, acceder a datos sensibles o tomar el control del dominio.
         </p>
         <ul class="beneficios-list">
-          <li>Simulación de ataques internos (como empleados desleales o malware)</li>
-          <li>Revisión de accesos a servidores, NAS, routers y dispositivos internos</li>
-          <li>Explotación de protocolos débiles como SMBv1, RDP, Telnet, etc.</li>
-          <li>Detección de movimientos laterales y escalamiento de privilegios</li>
-          <li>Informe técnico, análisis de riesgos y reunión de entrega</li>
-          <li>Soporte por correo y sistema de tickets incluido</li>
+          <li>Pruebas de escalamiento de privilegios (incluyendo técnicas como Kerberoasting).</li>
+          <li>Simulación de movimientos laterales dentro de la red.</li>
+          <li>Mapeo de rutas de ataque internas.</li>
+          <li>Análisis de delegaciones, trust relationships y GPOs vulnerables.</li>
+          <li>Informe técnico con hallazgos, riesgos y pasos de remediación.</li>
+          <li>Reunión virtual con explicaciones para tu equipo técnico.</li>
+          <li>Soporte por correo, tickets y atención 24/7 ante incidentes críticos.</li>
         </ul>
+        <p class="plan-price">$2,500 – $4,000 USD / mes</p>
+        <a class="plan-btn" href="mailto:PDC_CYBERSECURITY@protonmail.com?subject=Contratar%20Blindaje%20Interno">Solicitar ahora</a>
       </div>
     </section>
 
     <section class="beneficios-section">
-      <h2 class="section-title">Beneficios del Plan</h2>
+      <h2 class="section-title">Beneficios clave</h2>
       <ul class="beneficios-list">
-        <li>Fortalece la seguridad de tu red interna contra amenazas reales</li>
-        <li>Evita que un acceso inicial comprometa toda tu infraestructura</li>
-        <li>Simula ataques desde adentro con técnicas reales de Red Team</li>
-        <li>Identifica accesos débiles, cuentas sin protección o privilegios excesivos</li>
-        <li>Mejora políticas internas y la segmentación de la red</li>
+        <li>Fortalece tu infraestructura crítica desde el núcleo.</li>
+        <li>Descubre fallas que podrían permitir ataques persistentes.</li>
+        <li>Reduce la posibilidad de compromisos masivos si un atacante logra acceso inicial.</li>
+        <li>Mejora la seguridad de usuarios, grupos y políticas.</li>
+        <li>Soporte 24/7 disponible para incidentes críticos de seguridad.</li>
       </ul>
     </section>
 
     <section class="beneficios-section">
-      <h2 class="section-title">¿Qué riesgos previene?</h2>
+      <h2 class="section-title">Riesgos que previene</h2>
       <ul class="beneficios-list">
-        <li>Propagación de malware o ransomware en la red interna</li>
-        <li>Accesos internos indebidos a archivos sensibles</li>
-        <li>Usuarios con más permisos de los necesarios (privilegios innecesarios)</li>
-        <li>Fallos en la segmentación de red que permiten moverse lateralmente</li>
-        <li>Fallas en firewalls internos, configuraciones y protocolos obsoletos</li>
+        <li>Escalamiento de privilegios no autorizado en tu red.</li>
+        <li>Compromiso del dominio y de los controladores.</li>
+        <li>Acceso lateral no detectado por atacantes internos o externos.</li>
+        <li>Exposición de contraseñas o hashes mal protegidos.</li>
+        <li>Persistencia de atacantes dentro del entorno de AD.</li>
       </ul>
     </section>
 
     <section class="contact-section">
-      <h2 class="section-title">Costo y Personalización</h2>
       <p class="contact-text">
-        Este plan tiene un costo sugerido de entre <strong>$2,000 y $5,000 USD mensuales</strong>, dependiendo de la complejidad de tu infraestructura, cantidad de dispositivos y puntos de acceso. Puedes añadir el <strong>Mapa de Exposición</strong> como complemento opcional para visualizar también la exposición externa de tu empresa.
+        ¿Te interesa reforzar la seguridad desde dentro? Escríbenos directamente para contratar este plan o conocer más:
       </p>
+      <a class="plan-btn" href="mailto:PDC_CYBERSECURITY@protonmail.com?subject=Contratar%20Blindaje%20Interno">Contáctanos por correo</a>
       <div class="contact-alt">
-        <p>Para contratar este plan o resolver dudas, escríbenos a:<br>
-        <a href="mailto:PDC_CYBERSECURITY@protonmail.com">PDC_CYBERSECURITY@protonmail.com</a></p>
+        <p>Disponible la opción de añadir el <strong>Mapa de Exposición</strong> como complemento adicional, para una visión externa de tus riesgos en internet.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2025 PDC CyberSec | Seguridad sin compromisos</p>
+    <p>© 2025 PDC CyberSec – Protección desde adentro hacia fuera</p>
   </footer>
 </body>
 </html>
